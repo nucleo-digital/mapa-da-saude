@@ -1,0 +1,13 @@
+{
+  "name": "Dashboard da Saúde",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nucleo-digital/dashboard-saude",
+  "authors": [
+    "Núcleo Digital <contato@nucleodigital.cc>"
+  ],
+  "description": "Dashboard Saúde",
+  "private": true,
+  "dependencies": {
+
+  }
+}
