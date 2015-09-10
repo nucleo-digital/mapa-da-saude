@@ -1,0 +1,58 @@
+{
+  "name": "dashboard-saude",
+  "version": "1.0.0",
+  "description": "Dashboard Saúde",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "jslint": "jshint lib test",
+    "csslint": "gulp compileCss && csslint dist/css/main.css",
+    "pretest": "npm run jslint",
+    "test": "./node_modules/.bin/mocha",
+    "bower": "bower",
+    "deploy": "NODE_PATH=./node_modules/:./lib/ gulp deploy",
+    "start": "NODE_PATH=./node_modules/:./lib/ gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nucleo-digital/dashboard-saude.git"
+  },
+  "author": "Núcleo Digital <contato@nucleodigital.cc>",
+  "bugs": {
+    "url": "https://github.com/nucleo-digital/dashboard-saude/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "codeclimate-test-reporter": "0.0.4",
+    "csslint": "^0.10.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-awspublish": "0.0.24",
+    "gulp-browserify": "^0.5.1",
+    "gulp-changed": "^1.1.0",
+    "gulp-concat": "^2.4.3",
+    "gulp-minify-css": "^0.4.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^3.0.0",
+    "gulp-webserver": "^0.9.0",
+    "istanbul": "^0.3.6",
+    "jshint": "^2.6.0",
+    "mithril": "^0.2.0",
+    "mocha": "^2.1.0",
+    "run-sequence": "^1.0.2",
+    "should": "^4.6.0"
+  },
+  "engine": "node 0.12",
+  "dependencies": {
+    "cookies-js": "^1.2.1",
+    "gulp-stylus": "~2.0.1",
+    "markdown": "^0.5.0",
+    "mithril-validator": "^1.1.0",
+    "moment": "^2.9.0",
+    "type-of-is": "^3.4.0",
+    "underscore": "~1.8.2",
+    "velocity-animate": "~1.2.2"
+  }
+}
