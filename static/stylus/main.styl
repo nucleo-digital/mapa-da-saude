@@ -1,13 +1,18 @@
+
 @import '../../bower_components/jeet/stylus/jeet'
 
 white = #fff
 dark-blue = #4c5768
+light-blue = #3db4d7
 light-grey = #d1d1d1
+
+bg-color = #dae0e6
 fg-color = #404b59
 
 horizontal-size = 960px
 
 body
+  background-color: bg-color
   color: fg-color
 
 #container
@@ -15,5 +20,7 @@ body
 
 #main
   margin-top: 4em
+  min-height: 30em
 
 @import "header"
+@import "footer"
