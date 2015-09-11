@@ -8,6 +8,8 @@
   "description": "Dashboard Saúde",
   "private": true,
   "dependencies": {
-
+    "jeet": "~6.1.2",
+    "mapbox.js": "~2.2.1",
+    "normalize-css": "normalize.css#~3.0.3"
   }
 }

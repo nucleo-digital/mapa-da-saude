@@ -1,0 +1,35 @@
+
+#header
+  position: absolute
+  display: block
+  left: 0
+  right: 0
+  background-color: dark-blue
+  color: light-grey
+
+  .menu
+    center(horizontal-size)
+    a
+      color: light-grey
+      text-decoration: none
+
+    .menu-item
+      display: inline-block
+      padding: .75em 0
+      margin: 0 2px
+
+      &.title
+        align(horizontal)
+        text-align: center
+        font-weight: bold
+
+        a
+          color: white
+
+      &.right
+        float: right
+        padding: .75em 1em
+
+        &:hover
+          background-color: lighten(dark-blue, 10%)
+

@@ -91,8 +91,8 @@ gulp.task('copyJsons', function () {
 
 gulp.task('copyVendorCssLibraries', function () {
   return gulp.src([
-      // 'bower_components/pure/pure-min.css',
-      // 'bower_components/pure/grids-responsive-min.css'
+      'bower_components/normalize-css/normalize.css',
+      'bower_components/mapbox.js/mapbox.css',
     ])
     .pipe(concat('vendor.css'))
     //.pipe(minifyCSS())
