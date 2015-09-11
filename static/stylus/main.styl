@@ -1,3 +1,19 @@
-body
-  background-color: #ebebeb
+@import '../../bower_components/jeet/stylus/jeet'
 
+white = #fff
+dark-blue = #4c5768
+light-grey = #d1d1d1
+fg-color = #404b59
+
+horizontal-size = 960px
+
+body
+  color: fg-color
+
+#container
+  center(horizontal-size)
+
+#main
+  margin-top: 4em
+
+@import "header"
