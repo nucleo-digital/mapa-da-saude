@@ -5,12 +5,12 @@ var footer = {
   },
 
   view: function() {
-    return [
-        m('.bottom', [
-            m('.cc', 'creative commons'),
-            m('.github', 'github'),
-        ])
-    ]
+    return m('#footer', [
+      m('.bottom', [
+        m('.cc', 'creative commons'),
+        m('.github', 'github'),
+      ]),
+    ]);
   }
 };
 
