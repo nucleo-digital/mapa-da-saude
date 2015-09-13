@@ -10,8 +10,8 @@
     "pretest": "npm run jslint",
     "test": "./node_modules/.bin/mocha",
     "bower": "bower",
-    "deploy": "NODE_PATH=./node_modules/:./lib/ gulp deploy",
-    "start": "NODE_PATH=./node_modules/:./lib/ gulp"
+    "deploy": "NODE_PATH=./node_modules/:./app/ gulp deploy",
+    "start": "NODE_PATH=./node_modules/:./app/ gulp"
   },
   "repository": {
     "type": "git",

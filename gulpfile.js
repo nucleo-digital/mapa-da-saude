@@ -44,7 +44,7 @@ gulp.task('cleanDist', function(cb) {
 });
 
 gulp.task('compileJsDev', function () {
-  return gulp.src('lib/index.js')
+  return gulp.src('app/index.js')
     .pipe(browserify())
     .on('error', swallowError)
     .pipe(rename('bundle.js'))
@@ -52,7 +52,7 @@ gulp.task('compileJsDev', function () {
 });
 
 gulp.task('compileJs', function () {
-  return gulp.src('lib/index.js')
+  return gulp.src('app/index.js')
     .pipe(browserify())
     .on('error', swallowError)
     .pipe(uglify())
@@ -113,7 +113,7 @@ gulp.task('publishBlob', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('lib/**', ['compileJsDev']);
+  gulp.watch('app/**', ['compileJsDev']);
   gulp.watch('static/stylus/**', ['compileCss']);
   gulp.watch('static/index.html', ['copyHtml']);
   gulp.watch('static/img/**', ['copyImages']);
