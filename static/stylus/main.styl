@@ -6,9 +6,16 @@ light-blue = #3db4d7
 light-grey = #d1d1d1
 
 bg-color = #dae0e6
-fg-color = #404b59
+fg-color = dark-blue
 
 horizontal-size = 960px
+
+*
+  font-size: 12px
+  box-sizing: border-box
+
+  &:after, &:before
+    box-sizing: border-box
 
 body
   background-color: bg-color
@@ -25,3 +32,4 @@ body
 @import "header"
 @import "footer"
 @import "home"
+@import "switch"

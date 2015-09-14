@@ -1,0 +1,51 @@
+.switch-wrapper
+  display: inline-block
+  float: right
+  margin-top: 1em
+
+  .switch-btn
+    position: absolute
+    margin-left: -9999px
+    visibility: hidden
+
+  .switch-btn + label
+    display: block
+    position: relative
+    cursor: pointer
+    outline: none
+    user-select: none
+
+    padding: 2px
+    width: 2.4em
+    height: 1.2em
+    background-color: #dddddd
+    border-radius: 1.2em
+
+  input.switch-btn + label:before,
+  input.switch-btn + label:after
+    display: block
+    position: absolute
+    top: 1px
+    left: 1px
+    bottom: 1px
+    content: ""
+
+  input.switch-btn + label:before
+    right: 1px
+    background-color: #f1f1f1
+    border-radius: 1.2em
+    transition: background 0.4s
+
+  input.switch-btn + label:after
+    width: 1.2em
+    background-color: fg-color
+    border-radius: 100%
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
+    transition: margin 0.4s
+
+  input.switch-btn:checked + label:before
+    background-color: lighten(light-blue, 35);
+
+  input.switch-btn:checked + label:after
+    background-color: light-blue;
+    margin-left: 1.2em
