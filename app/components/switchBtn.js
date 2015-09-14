@@ -6,7 +6,7 @@ var switchBtn = {
 
   view: function(ctrl, args) {
     return m('.switch-wrapper', [
-      m('input.switch-btn[id='+args.btnId+'][type=checkbox]'),
+      m('input.switch-btn[id='+args.btnId+'][type=checkbox]', {onclick: args.onclick, onchange: args.onchange}),
       m('label[for='+args.btnId+']'),
     ]);
   }

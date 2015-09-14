@@ -1,7 +1,9 @@
 var m = require('mithril');
 
 var map = {
-  controller: function() {
+  controller: function(args) {
+    map.homeVM = args.homeVM;
+
     this.drawMap = function(element, isInitialized) {
       if (isInitialized) return;
 

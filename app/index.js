@@ -1,7 +1,8 @@
 /*globals app:true */
 
 // require mapbox as soon as possible
-require('mapbox.js')
+require('mapbox.js');
+require('velocity-animate');
 
 var c = require('config');
 var m = require('mithril');
