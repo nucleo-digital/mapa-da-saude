@@ -16,9 +16,10 @@ var home = {
 
         var mapWidth = _this.rankingOpen() ? '40%' : '70%';
         var rankWidth = _this.rankingOpen() ? '30%' : '0';
+        var rankMargin = _this.rankingOpen() ? '0' : '-2em'
 
         Velocity(mapEl, {width: mapWidth}, {duration: 200});
-        Velocity(rankEl, {width: rankWidth}, {duration: 200});
+        Velocity(rankEl, {width: rankWidth, marginRight: rankMargin}, {duration: 200});
       }
     }
   },

@@ -7,6 +7,8 @@ var ranking = {
 
   view: function(ctrl) {
     return m('#ranking', [
+      m('h2', 'RANKING'),
+      m('.small-divider'),
 
     ]);
   }
