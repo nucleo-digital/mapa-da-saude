@@ -18,7 +18,6 @@ var headers = {'Cache-Control': 'private'};
 
 
 function swallowError (error) {
-
     //If you want details of the error in the console
     console.log(error.toString());
 
@@ -142,7 +141,7 @@ gulp.task('createSite', [
 
 gulp.task('deploy', function () {
   if (process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY) {
-    var bucket = process.env.NODE_ENV == 'production' ? 'plataformabrasil.org.br' : 'testes.plataformabrasil.org.br';
+    var bucket = process.env.NODE_ENV == 'production' ? 'dashboardsaude.org.br' : 'testes.dashboardsaude.org.br';
     publisher = awspublish.create({
       key: process.env.AWS_ACCESS_KEY_ID,
       secret: process.env.AWS_SECRET_ACCESS_KEY,
