@@ -9,6 +9,7 @@ var home = {
       var _this = this;
 
       _this.rankingOpen = m.prop(false);
+      _this.indicator = m.prop('service');
 
       _this.onRankingToggle = function() {
         var mapEl = document.getElementById('map');
@@ -16,7 +17,7 @@ var home = {
 
         var mapWidth = _this.rankingOpen() ? '40%' : '70%';
         var rankWidth = _this.rankingOpen() ? '30%' : '0';
-        var rankMargin = _this.rankingOpen() ? '0' : '-2em'
+        var rankMargin = _this.rankingOpen() ? '0' : '-2em';
 
         Velocity(mapEl, {width: mapWidth}, {duration: 200});
         Velocity(rankEl, {width: rankWidth, marginRight: rankMargin}, {duration: 200});

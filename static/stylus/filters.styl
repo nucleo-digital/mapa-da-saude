@@ -14,12 +14,60 @@
     color: lighten(fg-color, 20)
 
   .indicators
-    h3
-      display: inline-block
-      float: left
-      font-size: 1em
+    .indicators-header
+      display: block
+      width: 100%
+      height: 3em
 
-    .ranking-toggle-title
+      h3
+        display: inline-block
+        float: left
+        font-size: 1em
+
+      .ranking-toggle-title
+        display: inline-block
+        float: right
+        margin: 1em 1em 0 0
+
+    .indicators-input
+      margin-top: 1em
+
+      input
+        display: inline-block
+
+        &:checked + label
+          font-weight: bold
+
+      label
+        display: inline-block
+        margin-left: .5em
+
+  .separator
+    margin-top: 2em
+    border-top: 1px solid lighten(light-grey, 10)
+    width: 100%
+
+  .subtitles
+    margin-top: 1em
+
+    .item
+      width: 33%
       display: inline-block
-      float: right
-      margin: 1em 1em 0 0
+
+      .circle
+        margin-right: .5em
+
+        &.red
+          circle(fg-red, white)
+
+        &.yellow
+          circle(fg-yellow, white)
+
+        &.green
+          circle(fg-green, white)
+
+      .label
+        display: inline-block
+
+
+

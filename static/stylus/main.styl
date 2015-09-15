@@ -8,6 +8,10 @@ light-grey = #d1d1d1
 bg-color = #dae0e6
 fg-color = dark-blue
 
+fg-red = #b40033
+fg-yellow = #efa535
+fg-green = #4e9d55
+
 horizontal-size = 960px
 
 *
@@ -31,6 +35,24 @@ body
 .small-divider
   border-top: 1px solid light-blue
   width: 2em
+
+circle(fgcolor=fg-color, bgcolor=bg-color, outersize=1em, innersize=0.5em)
+  border-radius: 50%
+  width: outersize
+  height: outersize
+  display: inline-block
+  position: relative
+  background-color: fgcolor
+
+  .inner-circle
+    border-radius: 50%
+    width: innersize
+    height: innersize
+    display: inline-block
+    position: absolute
+    background-color: bgcolor
+    left: 25%
+    top: 25%
 
 @import "header"
 @import "footer"
