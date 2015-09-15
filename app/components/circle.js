@@ -5,7 +5,7 @@ var circle = {
   },
 
   view: function(ctrl, args) {
-    var cls = (args.class) ? ('.' + args.class) : '';
+    var cls = (args && args.class) ? ('.' + args.class) : '';
     return m('.circle' + cls, [m('.inner-circle')])
   }
 }
