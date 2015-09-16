@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Regional do Cariri (HRC)",
+    "type": "hospital",
+    "city": "Juazeiro do Norte",
+    "region": "Cariri",
+    "lat": "7°13'33.20\"S",
+    "lon": "39°19'31.70\"O",
+    "specializedServices": "atencao a doença renal cronica; cirurgia vascular; atencao domiciliar; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; dispensacao de orteses proteses e materiais espe; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; reabilitacao; traumatologia e ortopedia; urgencia e emergencia; videolaparoscopia; vigilancia em saude; transplante"
+  },
+
+  {
+    "name": "Regional do Norte (HRN)",
+    "type": "hospital",
+    "city": "Sobral",
+    "region": "Sobral",
+    "lat": "3°40'33.49\"S",
+    "lon": "40°22'7.20\"O",
+    "specializedServices": "atencao a doença renal cronica; cirurgia vascular; atencao ao pre-natal, parto e nascimento; atencao domiciliar; cuidados intermediarios; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; orteses, proteses e mat especiais em reabilitacao; reabilitacao; suporte nutricional; urgencia e emergencia; videolaparoscopia; transplante"
+  },
+
+  {
+    "name": "Waldemar Alcântara (HGWA)",
+    "type": "hospital",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°49'54.85\"S",
+    "lon": "38°28'45.64\"O",
+    "specializedServices": "atencao a doença renal cronica; atencao em urologia; cirurgia vascular; hospital dia; atencao ao paciente com tuberculose; atencao domiciliar; atencao em saude bucal; cuidados intermediarios; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; oncologia; pneumologia; reabilitacao; suporte nutricional; videolaparoscopia; vigilancia em saude; transplante"
+  },
+
+  {
+    "name": "Geral de Fortaleza (HGF)",
+    "type": "hospital",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°44'21.73\"S",
+    "lon": "38°28'36.01\"O",
+    "specializedServices": "atencao a doença renal cronica; atencao em urologia; cirurgia vascular; medicina nuclear; atencao a dsthivaids; atencao a obesidade; atencao a saude auditiva; atencao a saude reprodutiva; atencao ao pre-natal, parto e nascimento; atencao cardiovascular / cardiologia; atencao domiciliar; atencao em neurologia / neurocirurgia; atencao em saude bucal; atencao psicossocial; controle de tabagismo; cuidados intermediarios; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; dispensacao de orteses proteses e materiais espe; endoscopia; farmacia; fisioterapia; hemoterapia; laboratorio de histocompatibilidade; oftalmologia; oncologia; orteses, proteses e mat especiais em reabilitacao; praticas integrativas e complementares; reabilitacao; suporte nutricional; terapia intensiva; traumatologia e ortopedia; triagem neonatal; urgencia e emergencia; videolaparoscopia; vigilancia em saude; servico posto de coleta de materiais biologicos; transplante"
+  },
+
+  {
+    "name": "Autran Nunes (UPA-AN)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°45'22.32\"S",
+    "lon": "38°35'39.53\"O",
+    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+  },
+
+  {
+    "name": "Messejana (UPA-MS)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°50'22.98\"S",
+    "lon": "38°28'57.11\"O",
+    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+  },
+
+  {
+    "name": "José Walter (UPA-JW)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°49'32.51\"S",
+    "lon": "38°32'29.50\"O",
+    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia"
+  },
+
+  {
+    "name": "Praia do Futuro (UPA-PF)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°44'42.14\"S",
+    "lon": "38°27'15.41\"O",
+    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia"
+  },
+
+  {
+    "name": "Canindezinho (UPA-CN)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°49'17.94\"S",
+    "lon": "38°36'31.87\"O",
+    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia"
+  },
+
+  {
+    "name": "Conjunto Ceará (UPA-CC)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°46'8.13\"S",
+    "lon": "38°35'59.93\"O",
+    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+  },
+
+  {
+    "name": "Pirambu (UPA-PRB)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°42'31.74\"S",
+    "lon": "38°34'5.98\"O",
+    "specializedServices": ""
+  },
+
+  {
+    "name": "Jangurussu (UPA JAN)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°50'19.79\"S",
+    "lon": "38°31'20.19\"O",
+    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+  },
+
+  {
+    "name": "Itaperi (UPA-ITPR)",
+    "type": "upa",
+    "city": "Fortaleza",
+    "region": "Fortaleza",
+    "lat": "3°47'44.60\"S",
+    "lon": "38°33'16.49\"O",
+    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+  }
+]

@@ -1,16 +1,47 @@
 var m = require('mithril');
+var c = require('config');
+
+var Hospital = require('models/hospital');
 
 var map = {
+  vm: {
+    init: function() {
+      this.mapEl = null;
+    }
+  },
+
   controller: function(args) {
+    var _this = this;
+    map.vm.init()
+
     map.homeVM = args.homeVM;
 
-    this.drawMap = function(element, isInitialized) {
+    _this.drawMap = function(element, isInitialized) {
       if (isInitialized) return;
 
-      L.mapbox.accessToken = 'pk.eyJ1IjoiYW5kZXJzb25jYXJkb3NvIiwiYSI6ImZlM' +
-                             'zY1ZmUxMDBjZTZmMGI3ZDQ4MmRhOWFlZjdjMzQ5In0.Z' +
-                             'ABI2r0BxiN4sdntoU385Q';
-      L.mapbox.map('map', 'mapbox.emerald').setView([40, -74.50], 10);
+      L.mapbox.accessToken = c.getMapboxToken();
+      map.vm.mapEl = L.mapbox.map('map', 'mapbox.emerald');
+
+      _this.loadData()
+    };
+
+    _this.loadData = function() {
+
+      Hospital.all().then(function(hospitais) {
+        // set initial position
+        map.vm.mapEl.setView(hospitais[4].pos, 11);
+
+        hospitais.forEach(function(hosp) {
+          var icon = L.mapbox.marker.icon({
+              title: hosp.name,
+              'marker-symbol': 'circle-stroked',
+              'marker-size': 'small',
+              'marker-color': '#4c5768'
+          });
+
+          L.marker(hosp.pos, {icon: icon}).addTo(map.vm.mapEl);
+        });
+      });
     };
   },
 

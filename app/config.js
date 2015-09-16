@@ -12,9 +12,19 @@ config.getHost = function() {
   }
 };
 
-config.getApiHost = function() {
-  return this.getHost() + '/api'
-};
+config.getMapboxToken = function() {
+  if (this.getEnv() == 'DEV') {  // CHANGE-ME
+    return 'pk.eyJ1IjoiYW5kZXJzb25jYXJkb3NvIiwiYSI6ImZlM' +
+           'zY1ZmUxMDBjZTZmMGI3ZDQ4MmRhOWFlZjdjMzQ5In0.Z' +
+           'ABI2r0BxiN4sdntoU385Q';
+
+  } else if (this.getEnv() == 'TEST') {
+    return "";  // TODO change-me
+
+  } else {  // PROD
+    return "";  // TODO change-me
+  }
+}
 
 config.getEnv = function() {
   if (location.hostname.indexOf("local") > -1) {
