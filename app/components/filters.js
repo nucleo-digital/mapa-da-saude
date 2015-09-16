@@ -1,6 +1,5 @@
 var m = require('mithril');
 var switchBtn = require('components/switchBtn');
-var circle = require('components/circle');
 
 var filters = {
   controller: function(args) {
@@ -51,17 +50,17 @@ var filters = {
       m('h3', 'Legenda'),
       m('.subtitles', [
         m('.item', [
-          m.component(circle, {class: 'green'}),
+          m('.circle.green'),
           m('.label', 'Ótimo'),
         ]),
 
         m('.item', [
-          m.component(circle, {class: 'yellow'}),
+          m('.circle.yellow'),
           m('.label', 'Regular'),
         ]),
 
         m('.item', [
-          m.component(circle, {class: 'red'}),
+          m('.circle.red'),
           m('.label', 'Ruim'),
         ]),
 

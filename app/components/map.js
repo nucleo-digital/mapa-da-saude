@@ -2,6 +2,7 @@ var m = require('mithril');
 var c = require('config');
 
 var Hospital = require('models/hospital');
+var EM = 12; // main.styl -> font-size: 12px
 
 var map = {
   vm: {
@@ -31,14 +32,13 @@ var map = {
         map.vm.mapEl.setView(hospitais[4].pos, 11);
 
         hospitais.forEach(function(hosp) {
-          L.circleMarker(hosp.pos, {
-              title: hosp.name,
-              color: '#4c5768',
-              opacity: 1,
-              fillColor: "#000",
-              fillOpacity: 0,
-              weight: 5,
-              radius: 7,
+          L.marker(hosp.pos, {
+            icon: L.divIcon({
+              className: 'circle-marker',
+              iconSize: 2 * EM,
+              // html: '<span>oi</span>'
+            }),
+            title: hosp.name,
           }).addTo(map.vm.mapEl);
         });
       });

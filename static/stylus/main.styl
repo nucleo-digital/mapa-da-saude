@@ -36,26 +36,17 @@ body
   border-top: 1px solid light-blue
   width: 2em
 
-circle(fgcolor=fg-color, bgcolor=bg-color, outersize=1em, innersize=0.5em)
-  border-radius: 50%
-  width: outersize
-  height: outersize
-  display: inline-block
-  position: relative
-  background-color: fgcolor
+circle(fgcolor=fg-color, size=1em)
+  width: size !important
+  height: size !important
+  background-color: rgba(0,0,0,0)
+  border-color: fgcolor
+  border-style: solid
+  border-width: (size / 4)
+  border-radius: (size / 2)
 
-  .inner-circle
-    border-radius: 50%
-    width: innersize
-    height: innersize
-    display: inline-block
-    position: absolute
-    background-color: bgcolor
-    left: 25%
-    top: 25%
-
-.circle-icon
-  circle(fg-color)
+.circle-marker
+  circle(fg-color, 2em)
 
 @import "header"
 @import "footer"
