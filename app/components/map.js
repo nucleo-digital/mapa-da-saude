@@ -26,20 +26,20 @@ var map = {
     };
 
     _this.loadData = function() {
-
       Hospital.all().then(function(hospitais) {
         // set initial position
         map.vm.mapEl.setView(hospitais[4].pos, 11);
 
         hospitais.forEach(function(hosp) {
-          var icon = L.mapbox.marker.icon({
+          L.circleMarker(hosp.pos, {
               title: hosp.name,
-              'marker-symbol': 'circle-stroked',
-              'marker-size': 'small',
-              'marker-color': '#4c5768'
-          });
-
-          L.marker(hosp.pos, {icon: icon}).addTo(map.vm.mapEl);
+              color: '#4c5768',
+              opacity: 1,
+              fillColor: "#000",
+              fillOpacity: 0,
+              weight: 5,
+              radius: 7,
+          }).addTo(map.vm.mapEl);
         });
       });
     };
