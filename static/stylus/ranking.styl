@@ -5,7 +5,51 @@
   width: 0
   height: 30em;
   background-color: lighten(bg-color, 7)
-  padding: 1em
   margin-right: -2em
+  overflow-y: scroll
+
   h2
+    margin-left: 1em
+
     font-size: 1.2em
+
+  .small-divider
+    margin-left: 1.2em
+
+  ul
+    list-style-type: none
+    padding: 0
+
+    li.ranking-item
+      padding: .5em .5em .5em 1.2em
+
+      &:hover
+        background-color: lighten(bg-color, 3)
+
+      .circle
+        display: inline-block
+        margin-right: .5em
+
+        .inner-index
+          font-size: .8em
+          font-weight: bold
+          width: 1em
+          margin: .3em 0 0 .25em
+          text-align: center
+
+        &.green
+          circle(fg-green, 2em)
+
+        &.yellow
+          circle(fg-yellow, 2em)
+
+        &.red
+          circle(fg-red, 2em)
+
+      .name
+        display: inline-block
+        width: 80%
+        padding: .5em .2em
+        margin-top: -1em
+
+

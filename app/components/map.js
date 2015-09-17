@@ -84,14 +84,7 @@ var map = {
   },
 
   indicatorClass: function(hosp) {
-    var color;
-    var value = hosp.ratings[homeVM.indicator()];
-
-    if      (value >= 7) { color = 'green'; }
-    else if (value <= 4) { color = 'red'; }
-    else                 { color = 'yellow'; }
-
-    return 'indicator-' + color;
+    return 'indicator-' + Hospital.indicatorColor(hosp);
   },
 
   onChangeIndicator: function() {

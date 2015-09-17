@@ -2,6 +2,8 @@ var m = require('mithril');
 var c = require('config');
 var _ = require('underscore');
 
+var homeVM = require('models/homeVM');
+
 var _hospitais = []; // cache
 
 var Hospital = {
@@ -34,6 +36,14 @@ var Hospital = {
         deferred.resolve(hospitais);
     });
     return deferred.promise;
+  },
+
+  indicatorColor: function(hosp) {
+    var value = hosp.ratings[homeVM.indicator()];
+
+    if      (value >= 7)  return 'green';
+    else if (value <= 4)  return 'red';
+    else                  return 'yellow';
   },
 
 };
