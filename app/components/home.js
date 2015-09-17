@@ -20,8 +20,9 @@ var home = {
         var rankWidth  = _this.rankingOpen() ? '30%' : '0';
         var rankMargin = _this.rankingOpen() ? '0'   : '-2em';
 
-        Velocity(mapEl, {width: mapWidth}, {duration: 200});
+        Velocity(mapEl, {width: mapWidth}, {duration: 200, complete: map.vm.mapResize});
         Velocity(rankEl, {width: rankWidth, marginRight: rankMargin}, {duration: 200});
+
       }
     }
   },
