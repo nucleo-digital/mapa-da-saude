@@ -10,8 +10,6 @@ var EM = 12; // main.styl -> font-size: 12px
 var map = {
   el: null,
 
-  _hospitais: [],
-
   controller: function() {
     events.subscribe('changeIndicator', map.onChangeIndicator);
   },
@@ -30,20 +28,17 @@ var map = {
   },
 
   loadData: function() {
-    Hospital.all().then(function(hospitais) {
-      map._hospitais = hospitais;
+    Hospital.each(function(hosp) {
+      if (hosp.id) {
+        map.buildMarker(hosp)
+          .on('click', function() { map.setActiveMark(hosp); })
+          .addTo(map.el);
 
-      _.each(hospitais, function(hosp) {
-        if (hosp.id) {
-          map.buildMarker(hosp)
-            .on('click', function() { map.setActiveMark(hosp); })
-            .addTo(map.el);
+      } else {
+        console.error("hospital must have an ID");
+      }
 
-        } else {
-          console.error("hospital must have an ID");
-        }
-      });
-
+    }).then(function(hospitais) {
       // TODO change-me
       // set and arbitrary point to start
       map.setActiveMark(hospitais[12]);
@@ -100,7 +95,7 @@ var map = {
   },
 
   onChangeIndicator: function() {
-    _.each(map._hospitais, function(hosp) {
+    Hospital.each(function(hosp) {
       var el = document.getElementsByClassName(hosp.elementID)[0];
 
       // reset color to new indicator

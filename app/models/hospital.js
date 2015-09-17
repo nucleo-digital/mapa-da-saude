@@ -2,15 +2,38 @@ var m = require('mithril');
 var c = require('config');
 var _ = require('underscore');
 
+var _hospitais = []; // cache
+
 var Hospital = {
+
   all: function() {
-    return m.request({method: 'get', url: '/json/hospitais.json'}).then(function(hospitais) {
-      _.each(hospitais, function(hosp) {
-        hosp.pos = [_convertAngleToFloat(hosp.lat), _convertAngleToFloat(hosp.lon)];
-        hosp.elementID = 'hospital-' + hosp.id;
+    if (_hospitais.length > 0) {  // cached
+      var deferred = m.deferred();  // use deferred to keep same interface usage
+      deferred.resolve(_hospitais);
+      return deferred.promise;
+
+    } else {
+      return m.request({method: 'get', url: '/json/hospitais.json'}).then(function(hospitais) {
+        _.each(hospitais, function(hosp) {
+          hosp.pos = [_convertAngleToFloat(hosp.lat), _convertAngleToFloat(hosp.lon)];
+          hosp.elementID = 'hospital-' + hosp.id;
+        });
+
+        _hospitais = hospitais;  // cache result
+        return hospitais;
       });
-      return hospitais;
+    }
+  },
+
+  each: function(fn) {
+    var deferred = m.deferred();
+
+    Hospital.all().then(function(hospitais) {
+        _.each(hospitais, fn);
+
+        deferred.resolve(hospitais);
     });
+    return deferred.promise;
   },
 
 };
