@@ -7,7 +7,23 @@
     "region": "Cariri",
     "lat": "7°13'33.20\"S",
     "lon": "39°19'31.70\"O",
-    "specializedServices": "atencao a doença renal cronica; cirurgia vascular; atencao domiciliar; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; dispensacao de orteses proteses e materiais espe; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; reabilitacao; traumatologia e ortopedia; urgencia e emergencia; videolaparoscopia; vigilancia em saude; transplante"
+    "info": {
+        "specializedServices": "atencao a doença renal cronica; cirurgia vascular; atencao domiciliar; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; dispensacao de orteses proteses e materiais espe; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; reabilitacao; traumatologia e ortopedia; urgencia e emergencia; videolaparoscopia; vigilancia em saude; transplante",
+
+        "ambulatoryCare": "H",
+        "hospitalCare": "H",
+        "numPhysicians": "136",
+        "numOtherProfessionals": "99",
+        "numBeds": "234",
+        "numPatients": "117,338",
+        "ombudsman": "631"
+    },
+    "ratings": {
+        "services": 5,
+        "equipments": 2,
+        "physicians": 6,
+        "waitingTime": 8
+    }
   },
 
   {
@@ -18,7 +34,22 @@
     "region": "Sobral",
     "lat": "3°40'33.49\"S",
     "lon": "40°22'7.20\"O",
-    "specializedServices": "atencao a doença renal cronica; cirurgia vascular; atencao ao pre-natal, parto e nascimento; atencao domiciliar; cuidados intermediarios; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; orteses, proteses e mat especiais em reabilitacao; reabilitacao; suporte nutricional; urgencia e emergencia; videolaparoscopia; transplante"
+    "info": {
+        "specializedServices": "atencao a doença renal cronica; cirurgia vascular; atencao ao pre-natal, parto e nascimento; atencao domiciliar; cuidados intermediarios; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; orteses, proteses e mat especiais em reabilitacao; reabilitacao; suporte nutricional; urgencia e emergencia; videolaparoscopia; transplante",
+        "ambulatoryCare": "H",
+        "hospitalCare": "H",
+        "numPhysicians": "122",
+        "numOtherProfessionals": "168",
+        "numBeds": "269",
+        "numPatients": "91,547",
+        "ombudsman": "947"
+    },
+    "ratings": {
+        "services": 2,
+        "equipments": 8,
+        "physicians": 3,
+        "waitingTime": 4
+    }
   },
 
   {
@@ -29,7 +60,22 @@
     "region": "Fortaleza",
     "lat": "3°49'54.85\"S",
     "lon": "38°28'45.64\"O",
-    "specializedServices": "atencao a doença renal cronica; atencao em urologia; cirurgia vascular; hospital dia; atencao ao paciente com tuberculose; atencao domiciliar; atencao em saude bucal; cuidados intermediarios; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; oncologia; pneumologia; reabilitacao; suporte nutricional; videolaparoscopia; vigilancia em saude; transplante"
+    "info": {
+        "specializedServices": "atencao a doença renal cronica; atencao em urologia; cirurgia vascular; hospital dia; atencao ao paciente com tuberculose; atencao domiciliar; atencao em saude bucal; cuidados intermediarios; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; endocrinologia; endoscopia; farmacia; fisioterapia; hemoterapia; oncologia; pneumologia; reabilitacao; suporte nutricional; videolaparoscopia; vigilancia em saude; transplante",
+        "ambulatoryCare": "-",
+        "hospitalCare": "H",
+        "numPhysicians": "203",
+        "numOtherProfessionals": "88",
+        "numBeds": "323",
+        "numPatients": "76,247",
+        "ombudsman": "1090"
+    },
+    "ratings": {
+        "services": 8,
+        "equipments": 3,
+        "physicians": 4,
+        "waitingTime": 5
+    }
   },
 
   {
@@ -40,7 +86,22 @@
     "region": "Fortaleza",
     "lat": "3°44'21.73\"S",
     "lon": "38°28'36.01\"O",
-    "specializedServices": "atencao a doença renal cronica; atencao em urologia; cirurgia vascular; medicina nuclear; atencao a dsthivaids; atencao a obesidade; atencao a saude auditiva; atencao a saude reprodutiva; atencao ao pre-natal, parto e nascimento; atencao cardiovascular / cardiologia; atencao domiciliar; atencao em neurologia / neurocirurgia; atencao em saude bucal; atencao psicossocial; controle de tabagismo; cuidados intermediarios; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; dispensacao de orteses proteses e materiais espe; endoscopia; farmacia; fisioterapia; hemoterapia; laboratorio de histocompatibilidade; oftalmologia; oncologia; orteses, proteses e mat especiais em reabilitacao; praticas integrativas e complementares; reabilitacao; suporte nutricional; terapia intensiva; traumatologia e ortopedia; triagem neonatal; urgencia e emergencia; videolaparoscopia; vigilancia em saude; servico posto de coleta de materiais biologicos; transplante"
+    "info": {
+    "specializedServices": "atencao a doença renal cronica; atencao em urologia; cirurgia vascular; medicina nuclear; atencao a dsthivaids; atencao a obesidade; atencao a saude auditiva; atencao a saude reprodutiva; atencao ao pre-natal, parto e nascimento; atencao cardiovascular / cardiologia; atencao domiciliar; atencao em neurologia / neurocirurgia; atencao em saude bucal; atencao psicossocial; controle de tabagismo; cuidados intermediarios; diagnostico por anatomia patologica eou citopato; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; dispensacao de orteses proteses e materiais espe; endoscopia; farmacia; fisioterapia; hemoterapia; laboratorio de histocompatibilidade; oftalmologia; oncologia; orteses, proteses e mat especiais em reabilitacao; praticas integrativas e complementares; reabilitacao; suporte nutricional; terapia intensiva; traumatologia e ortopedia; triagem neonatal; urgencia e emergencia; videolaparoscopia; vigilancia em saude; servico posto de coleta de materiais biologicos; transplante",
+        "ambulatoryCare": "H",
+        "hospitalCare": "H",
+        "numPhysicians": "602",
+        "numOtherProfessionals": "751",
+        "numBeds": "540",
+        "numPatients": "301,230",
+        "ombudsman": "1354"
+    },
+    "ratings": {
+        "services": 9,
+        "equipments": 9,
+        "physicians": 3,
+        "waitingTime": 2
+    }
   },
 
   {
@@ -51,7 +112,22 @@
     "region": "Fortaleza",
     "lat": "3°45'22.32\"S",
     "lon": "38°35'39.53\"O",
-    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+    "info": {
+        "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;",
+        "ambulatoryCare": "M",
+        "hospitalCare": "-",
+        "numPhysicians": "34",
+        "numOtherProfessionals": "70",
+        "numBeds": "0",
+        "numPatients": "236,559",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 5,
+        "equipments": 5,
+        "physicians": 6,
+        "waitingTime": 8
+    }
   },
 
   {
@@ -62,7 +138,22 @@
     "region": "Fortaleza",
     "lat": "3°50'22.98\"S",
     "lon": "38°28'57.11\"O",
-    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+    "info": {
+        "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;",
+        "ambulatoryCare": "M",
+        "hospitalCare": "-",
+        "numPhysicians": "34",
+        "numOtherProfessionals": "60",
+        "numBeds": "0",
+        "numPatients": "201,880",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 2,
+        "equipments": 4,
+        "physicians": 7,
+        "waitingTime": 6
+    }
   },
 
   {
@@ -73,7 +164,23 @@
     "region": "Fortaleza",
     "lat": "3°49'32.51\"S",
     "lon": "38°32'29.50\"O",
-    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia"
+    "info": {
+    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia",
+        "ambulatoryCare": "M",
+        "hospitalCare": "-",
+        "numPhysicians": "28",
+        "numOtherProfessionals": "79",
+        "numBeds": "0",
+        "numPatients": "165,743",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 1,
+        "equipments": 2,
+        "physicians": 8,
+        "waitingTime": 5
+    }
+
   },
 
   {
@@ -84,7 +191,22 @@
     "region": "Fortaleza",
     "lat": "3°44'42.14\"S",
     "lon": "38°27'15.41\"O",
-    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia"
+    "info": {
+        "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia",
+        "ambulatoryCare": "M",
+        "hospitalCare": "_",
+        "numPhysicians": "38",
+        "numOtherProfessionals": "73",
+        "numBeds": "0",
+        "numPatients": "163,639",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 3,
+        "equipments": 4,
+        "physicians": 5,
+        "waitingTime": 9
+    }
   },
 
   {
@@ -95,7 +217,22 @@
     "region": "Fortaleza",
     "lat": "3°49'17.94\"S",
     "lon": "38°36'31.87\"O",
-    "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia"
+    "info": {
+        "specializedServices": "atencao em saude bucal; diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia",
+        "ambulatoryCare": "M",
+        "hospitalCare": "_",
+        "numPhysicians": "39",
+        "numOtherProfessionals": "59",
+        "numBeds": "0",
+        "numPatients": "153,229",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 2,
+        "equipments": 1,
+        "physicians": 7,
+        "waitingTime": 6
+    }
   },
 
   {
@@ -106,7 +243,22 @@
     "region": "Fortaleza",
     "lat": "3°46'8.13\"S",
     "lon": "38°35'59.93\"O",
-    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+    "info": {
+        "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;",
+        "ambulatoryCare": "M",
+        "hospitalCare": "-",
+        "numPhysicians": "41",
+        "numOtherProfessionals": "49",
+        "numBeds": "0",
+        "numPatients": "117,762",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 3,
+        "equipments": 4,
+        "physicians": 6,
+        "waitingTime": 9
+    }
   },
 
   {
@@ -117,7 +269,22 @@
     "region": "Fortaleza",
     "lat": "3°42'31.74\"S",
     "lon": "38°34'5.98\"O",
-    "specializedServices": ""
+    "info": {
+        "specializedServices": "",
+        "ambulatoryCare": "M",
+        "hospitalCare": "-",
+        "numPhysicians": "-",
+        "numOtherProfessionals": "-",
+        "numBeds": "0",
+        "numPatients": "113,293",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 4,
+        "equipments": 4,
+        "physicians": 3,
+        "waitingTime": 7
+    }
   },
 
   {
@@ -128,7 +295,22 @@
     "region": "Fortaleza",
     "lat": "3°50'19.79\"S",
     "lon": "38°31'20.19\"O",
-    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+    "info": {
+        "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;",
+        "ambulatoryCare": "H",
+        "hospitalCare": "-",
+        "numPhysicians": "41",
+        "numOtherProfessionals": "61",
+        "numBeds": "0",
+        "numPatients": "84,018",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 6,
+        "equipments": 5,
+        "physicians": 8,
+        "waitingTime": 6
+    }
   },
 
   {
@@ -139,6 +321,21 @@
     "region": "Fortaleza",
     "lat": "3°47'44.60\"S",
     "lon": "38°33'16.49\"O",
-    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;"
+    "info": {
+    "specializedServices": "diagnostico por imagem; diagnostico por laboratorio clinico; diagnostico por metodos graficos dinamicos; urgencia e emergencia;",
+        "ambulatoryCare": "H",
+        "hospitalCare": "-",
+        "numPhysicians": "31",
+        "numOtherProfessionals": "35",
+        "numBeds": "0",
+        "numPatients": "76,877",
+        "ombudsman": "-"
+    },
+    "ratings": {
+        "services": 5,
+        "equipments": 7,
+        "physicians": 7,
+        "waitingTime": 8
+    }
   }
 ]

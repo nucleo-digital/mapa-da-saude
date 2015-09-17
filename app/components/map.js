@@ -21,7 +21,7 @@ var map = {
     if (isInitialized) return;
 
     L.mapbox.accessToken = c.getMapboxToken();
-    map.el = L.mapbox.map('map', 'mapbox.emerald').setZoom(11);
+    map.el = L.mapbox.map('map', 'mapbox.emerald').setZoom(12);
 
     map.loadData();
   },
@@ -29,14 +29,19 @@ var map = {
   loadData: function() {
     Hospital.all().then(function(hospitais) {
       _.each(hospitais, function(hosp) {
-        map.buildMarker(hosp)
-          .on('click', function() { map.setActiveMark(hosp); })
-          .addTo(map.el);
+        if (hosp.id) {
+          map.buildMarker(hosp)
+            .on('click', function() { map.setActiveMark(hosp); })
+            .addTo(map.el);
+
+        } else {
+          console.error("hospital must have an ID");
+        }
       });
 
       // TODO change-me
       // set and arbitrary point to start
-      map.setActiveMark(hospitais[4]);
+      map.setActiveMark(hospitais[12]);
     });
   },
 
