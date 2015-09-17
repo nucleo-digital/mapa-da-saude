@@ -4,6 +4,8 @@
 require('mapbox.js');
 require('velocity-animate');
 
+require('pubsub');
+
 var c = require('config');
 var m = require('mithril');
 

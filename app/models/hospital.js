@@ -3,10 +3,7 @@ var c = require('config');
 var _ = require('underscore');
 
 var Hospital = {
-  activePoint: m.prop({name: null}),
-
   all: function() {
-
     return m.request({method: 'get', url: '/json/hospitais.json'}).then(function(hospitais) {
       _.each(hospitais, function(hosp) {
         hosp.pos = [_convertAngleToFloat(hosp.lat), _convertAngleToFloat(hosp.lon)];
@@ -14,7 +11,6 @@ var Hospital = {
       return hospitais;
     });
   }
-
 };
 
 var _convertAngleToFloat = function(point) {

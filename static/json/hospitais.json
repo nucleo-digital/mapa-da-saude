@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Regional do Cariri (HRC)",
     "type": "hospital",
     "city": "Juazeiro do Norte",
@@ -10,6 +11,7 @@
   },
 
   {
+    "id": 2,
     "name": "Regional do Norte (HRN)",
     "type": "hospital",
     "city": "Sobral",
@@ -20,6 +22,7 @@
   },
 
   {
+    "id": 3,
     "name": "Waldemar Alcântara (HGWA)",
     "type": "hospital",
     "city": "Fortaleza",
@@ -30,6 +33,7 @@
   },
 
   {
+    "id": 4,
     "name": "Geral de Fortaleza (HGF)",
     "type": "hospital",
     "city": "Fortaleza",
@@ -40,6 +44,7 @@
   },
 
   {
+    "id": 5,
     "name": "Autran Nunes (UPA-AN)",
     "type": "upa",
     "city": "Fortaleza",
@@ -50,6 +55,7 @@
   },
 
   {
+    "id": 6,
     "name": "Messejana (UPA-MS)",
     "type": "upa",
     "city": "Fortaleza",
@@ -60,6 +66,7 @@
   },
 
   {
+    "id": 7,
     "name": "José Walter (UPA-JW)",
     "type": "upa",
     "city": "Fortaleza",
@@ -70,6 +77,7 @@
   },
 
   {
+    "id": 8,
     "name": "Praia do Futuro (UPA-PF)",
     "type": "upa",
     "city": "Fortaleza",
@@ -80,6 +88,7 @@
   },
 
   {
+    "id": 9,
     "name": "Canindezinho (UPA-CN)",
     "type": "upa",
     "city": "Fortaleza",
@@ -90,6 +99,7 @@
   },
 
   {
+    "id": 10,
     "name": "Conjunto Ceará (UPA-CC)",
     "type": "upa",
     "city": "Fortaleza",
@@ -100,6 +110,7 @@
   },
 
   {
+    "id": 11,
     "name": "Pirambu (UPA-PRB)",
     "type": "upa",
     "city": "Fortaleza",
@@ -110,6 +121,7 @@
   },
 
   {
+    "id": 12,
     "name": "Jangurussu (UPA JAN)",
     "type": "upa",
     "city": "Fortaleza",
@@ -120,6 +132,7 @@
   },
 
   {
+    "id": 13,
     "name": "Itaperi (UPA-ITPR)",
     "type": "upa",
     "city": "Fortaleza",
