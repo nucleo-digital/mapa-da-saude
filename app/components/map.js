@@ -22,6 +22,10 @@ var map = {
       });
     },
 
+    mapResize: function() {
+      map.vm.mapEl.invalidateSize(true);
+    },
+
     setActivePoint: function(hosp) {
       this.resetPoints();
 
