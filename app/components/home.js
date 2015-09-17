@@ -2,6 +2,7 @@ var m        = require('mithril');
 var filters  = require('components/filters');
 var map      = require('components/map');
 var ranking  = require('components/ranking');
+var details  = require('components/details');
 var homeVM   = require('models/homeVM');
 
 var home = {
@@ -10,11 +11,14 @@ var home = {
   },
 
   view: function(ctrl) {
-    return m('.main-card', [
-      m.component(map),
-      m.component(ranking),
-      m.component(filters),
-    ]);
+    return [
+      m('.main-card', [
+        m.component(map),
+        m.component(ranking),
+        m.component(filters),
+      ]),
+      m.component(details),
+    ];
   },
 
   onToggleRanking: function() {
