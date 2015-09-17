@@ -48,6 +48,16 @@ circle(fgcolor=fg-color, size=1em)
 .circle-marker
   circle(fg-color, 2em)
 
+  &.indicator-green
+    border-color: fg-green
+
+  &.indicator-yellow
+    border-color: fg-yellow
+
+
+  &.indicator-red
+    border-color: fg-red
+
   .inner-content
     display: none
     font-size: 1.2em;
@@ -57,6 +67,7 @@ circle(fgcolor=fg-color, size=1em)
     margin: 8px 0 0 4px;
 
     text-align: center;
+
 
 .circle-marker-active
   circle(fg-color, 4em)

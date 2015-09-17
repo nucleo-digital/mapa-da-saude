@@ -39,9 +39,9 @@ var filters = {
           m('label[for=indicator-physicians]', 'Atenção dos médicos'),
         ]),
         m('.indicators-input', [
-          m('input[type=radio][name=indicator][id=indicator-waiting-time][value=waiting-time]',
+          m('input[type=radio][name=indicator][id=indicator-waitingTime][value=waitingTime]',
             {onchange: m.withAttr('value', homeVM.indicator)}),
-          m('label[for=indicator-waiting-time]', 'Tempo de espera'),
+          m('label[for=indicator-waitingTime]', 'Tempo de espera'),
         ]),
 
       ]), // end .indicators

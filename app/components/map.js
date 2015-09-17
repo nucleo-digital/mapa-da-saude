@@ -48,7 +48,7 @@ var map = {
   buildMarker: function(hosp) {
     return L.marker(hosp.pos, {
       icon: L.divIcon({
-        className: ('circle-marker hospital-' + hosp.id),
+        className: ('circle-marker hospital-' + hosp.id + ' indicator-' + map.indicatorClass(hosp)),
         iconSize: 2 * EM,
         html: '<span class="inner-content">42</span>'
       }),
@@ -81,6 +81,14 @@ var map = {
 
   resize: function() {
     map.el.invalidateSize(true);
+  },
+
+  indicatorClass: function(hosp) {
+    var value = hosp.ratings[homeVM.indicator()];
+    console.log(homeVM.indicator(), ':', value);
+    if (value >= 7) return 'green'
+    else if (value <= 4) return 'red'
+    else return 'yellow'
   },
 };
 

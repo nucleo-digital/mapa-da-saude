@@ -5,7 +5,7 @@ var homeVM = {
   rankingOpen: m.prop(false),
 
   // the filter indicator
-  indicator: m.prop('service'),
+  indicator: m.prop('services'),
 
   // active map point/mark
   activeMark: m.prop(),

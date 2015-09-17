@@ -14,7 +14,6 @@ var home = {
       m.component(map),
       m.component(ranking),
       m.component(filters),
-      m('.name', homeVM.activeMark() ? homeVM.activeMark().name : ''),
     ]);
   },
 
