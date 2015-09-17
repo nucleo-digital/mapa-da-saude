@@ -16,6 +16,10 @@ var homeVM = {
 
   changeIndicator: function() {
     events.publish('changeIndicator');
+  },
+
+  changeActiveMark: function(hosp) {
+    events.publish('changeActiveMark', hosp);
   }
 }
 

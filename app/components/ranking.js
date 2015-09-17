@@ -33,10 +33,17 @@ var ranking = {
   },
 
   renderItem: function(h, idx) {
-    return m('li.ranking-item', [
-      m('.circle.' + Hospital.indicatorColor(h), [m('.inner-index', idx + 1)]),
-      m('.name', h.name)
-    ]);
+    return m('li.ranking-item',
+      {onclick: function() { ranking.clicked(h); }},
+      [
+        m('.circle.' + Hospital.indicatorColor(h), [m('.inner-index', idx + 1)]),
+        m('.name', h.name)
+      ]
+    );
+  },
+
+  clicked: function(h) {
+    events.publish('changeActiveMark', h);
   },
 };
 

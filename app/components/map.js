@@ -12,6 +12,7 @@ var map = {
 
   controller: function() {
     events.subscribe('changeIndicator', map.onChangeIndicator);
+    events.subscribe('changeActiveMark', map.setActiveMark);
   },
 
   view: function(ctrl) {
