@@ -37,8 +37,8 @@ body
   width: 2em
 
 circle(fgcolor=fg-color, size=1em)
-  width: size !important
-  height: size !important
+  width: size
+  height: size
   background-color: rgba(0,0,0,0)
   border-color: fgcolor
   border-style: solid
@@ -47,6 +47,24 @@ circle(fgcolor=fg-color, size=1em)
 
 .circle-marker
   circle(fg-color, 2em)
+
+  .inner-content
+    display: none
+    font-size: 1.2em;
+    font-weight: bolder;
+    width: 2em;
+    height: 2em;
+    margin: 8px 0 0 4px;
+
+    text-align: center;
+
+.circle-marker-active
+  circle(fg-color, 4em)
+
+  width: 4em !important
+  margin-left: -2em !important
+  margin-top: -1em !important
+  transition: width 0.4s, height 0.4s, margin-left 0.4s, margin-top 0.4s;
 
 @import "header"
 @import "footer"

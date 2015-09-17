@@ -54,7 +54,7 @@
     "mithril-validator": "^1.1.0",
     "moment": "^2.9.0",
     "type-of-is": "^3.4.0",
-    "underscore": "~1.8.2",
+    "underscore": "^1.8.3",
     "velocity-animate": "~1.2.2"
   }
 }

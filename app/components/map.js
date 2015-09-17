@@ -1,5 +1,6 @@
 var m = require('mithril');
 var c = require('config');
+var _ = require('underscore');
 
 var Hospital = require('models/hospital');
 var EM = 12; // main.styl -> font-size: 12px
@@ -8,39 +9,69 @@ var map = {
   vm: {
     init: function() {
       this.mapEl = null;
-    }
+    },
+
+    buildMarker: function(hosp) {
+      return L.marker(hosp.pos, {
+        icon: L.divIcon({
+          className: ('circle-marker hospital-' + hosp.id),
+          iconSize: 2 * EM,
+          html: '<span class="inner-content">42</span>'
+        }),
+        title: hosp.name,
+      });
+    },
+
+    setActivePoint: function(hosp) {
+      this.resetPoints();
+
+      var el = document.getElementsByClassName('hospital-' + hosp.id)[0];
+      if (el) {
+        el.className += ' circle-marker-active'
+        Velocity(el.children[0], 'fadeIn', {display: 'inline-block'});
+      }
+
+      Hospital.activePoint(hosp);
+      this.mapEl.setView(hosp.pos);
+
+      m.redraw(true);
+    },
+
+    setStyleForActivePoint: function(el, hosp) {
+    },
+
+    resetPoints: function() {
+      _.each(document.getElementsByClassName('circle-marker-active'), function(el) {
+        el.className = el.className.replace('circle-marker-active', '');
+        el.children[0].style.display = 'none';
+      });
+    },
   },
 
-  controller: function(args) {
-    var _this = this;
+  controller: function() {
+    var ctrl = this;
     map.vm.init()
 
-    map.homeVM = args.homeVM;
-
-    _this.drawMap = function(element, isInitialized) {
+    ctrl.drawMap = function(element, isInitialized) {
       if (isInitialized) return;
 
       L.mapbox.accessToken = c.getMapboxToken();
-      map.vm.mapEl = L.mapbox.map('map', 'mapbox.emerald');
+      map.vm.mapEl = L.mapbox.map('map', 'mapbox.emerald').setZoom(11);
 
-      _this.loadData()
+      ctrl.loadData()
     };
 
-    _this.loadData = function() {
+    ctrl.loadData = function() {
       Hospital.all().then(function(hospitais) {
-        // set initial position
-        map.vm.mapEl.setView(hospitais[4].pos, 11);
-
-        hospitais.forEach(function(hosp) {
-          L.marker(hosp.pos, {
-            icon: L.divIcon({
-              className: 'circle-marker',
-              iconSize: 2 * EM,
-              // html: '<span>oi</span>'
-            }),
-            title: hosp.name,
-          }).addTo(map.vm.mapEl);
+        _.each(hospitais, function(hosp) {
+          map.vm.buildMarker(hosp)
+            .on('click', function() { map.vm.setActivePoint(hosp); return true; })
+            .addTo(map.vm.mapEl);
         });
+
+        // TODO change-me
+        // set and arbitrary point to start
+        map.vm.setActivePoint(hospitais[4]);
       });
     };
   },
