@@ -36,7 +36,7 @@ var ranking = {
     return m('li.ranking-item',
       {onclick: function() { ranking.clicked(h); }},
       [
-        m('.circle.' + Hospital.indicatorColor(h), [m('.inner-index', idx + 1)]),
+        m('.circle.' + Hospital.indicatorColor(h), [m('.inner-index', idx + 1 + '°')]),
         m('.name', h.name)
       ]
     );
