@@ -38,8 +38,12 @@ var Hospital = {
     return deferred.promise;
   },
 
+  indicatorValue: function(hosp) {
+    return hosp.ratings[homeVM.indicator()];
+  },
+
   indicatorColor: function(hosp) {
-    var value = hosp.ratings[homeVM.indicator()];
+    var value = Hospital.indicatorValue(hosp);
 
     if      (value >= 7)  return 'green';
     else if (value <= 4)  return 'red';

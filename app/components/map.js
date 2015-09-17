@@ -51,7 +51,7 @@ var map = {
       icon: L.divIcon({
         className: [ 'circle-marker', hosp.elementID, map.indicatorClass(hosp) ].join(' '),
         iconSize: 2 * EM,
-        html: '<span class="inner-content">42</span>'
+        html: '<span class="inner-content">' + Hospital.indicatorValue(hosp) + '</span>'
       }),
       title: hosp.name,
     });
@@ -94,6 +94,9 @@ var map = {
 
       // reset color to new indicator
       el.className = el.className.replace(/indicator-(red|green|yellow)/g, map.indicatorClass(hosp));
+
+      // set value to new indicator
+      el.children[0].textContent = Hospital.indicatorValue(hosp);
     });
   },
 };
