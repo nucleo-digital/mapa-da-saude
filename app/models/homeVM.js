@@ -13,6 +13,10 @@ var homeVM = {
   toggleRanking: function() {
     events.publish('toggleRanking');
   },
+
+  changeIndicator: function() {
+    events.publish('changeIndicator');
+  }
 }
 
 module.exports = homeVM;

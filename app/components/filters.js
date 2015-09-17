@@ -25,22 +25,32 @@ var filters = {
 
         m('.indicators-input', [
           m('input[type=radio][name=indicator][id=indicator-services][value=services][checked]',
-            {onchange: m.withAttr('value', homeVM.indicator)}),
+            {
+              onclick: m.withAttr('value', homeVM.indicator),
+              onchange: homeVM.changeIndicator,
+            }
+          ),
           m('label[for=indicator-services]', 'Serviços oferecidos pelo hospital'),
         ]),
         m('.indicators-input', [
-          m('input[type=radio][name=indicator][id=indicator-equipments][value=equipments]',
-            {onchange: m.withAttr('value', homeVM.indicator)}),
+          m('input[type=radio][name=indicator][id=indicator-equipments][value=equipments]', {
+              onclick: m.withAttr('value', homeVM.indicator),
+              onchange: homeVM.changeIndicator,
+          }),
           m('label[for=indicator-equipments]', 'Equipamentos'),
         ]),
         m('.indicators-input', [
-          m('input[type=radio][name=indicator][id=indicator-physicians][value=physicians]',
-            {onchange: m.withAttr('value', homeVM.indicator)}),
+          m('input[type=radio][name=indicator][id=indicator-physicians][value=physicians]', {
+              onclick: m.withAttr('value', homeVM.indicator),
+              onchange: homeVM.changeIndicator,
+          }),
           m('label[for=indicator-physicians]', 'Atenção dos médicos'),
         ]),
         m('.indicators-input', [
-          m('input[type=radio][name=indicator][id=indicator-waitingTime][value=waitingTime]',
-            {onchange: m.withAttr('value', homeVM.indicator)}),
+          m('input[type=radio][name=indicator][id=indicator-waitingTime][value=waitingTime]', {
+              onclick: m.withAttr('value', homeVM.indicator),
+              onchange: homeVM.changeIndicator,
+          }),
           m('label[for=indicator-waitingTime]', 'Tempo de espera'),
         ]),
 

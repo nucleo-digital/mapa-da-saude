@@ -7,10 +7,12 @@ var Hospital = {
     return m.request({method: 'get', url: '/json/hospitais.json'}).then(function(hospitais) {
       _.each(hospitais, function(hosp) {
         hosp.pos = [_convertAngleToFloat(hosp.lat), _convertAngleToFloat(hosp.lon)];
+        hosp.elementID = 'hospital-' + hosp.id;
       });
       return hospitais;
     });
-  }
+  },
+
 };
 
 var _convertAngleToFloat = function(point) {

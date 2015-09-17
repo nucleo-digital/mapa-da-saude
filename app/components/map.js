@@ -10,7 +10,10 @@ var EM = 12; // main.styl -> font-size: 12px
 var map = {
   el: null,
 
+  _hospitais: [],
+
   controller: function() {
+    events.subscribe('changeIndicator', map.onChangeIndicator);
   },
 
   view: function(ctrl) {
@@ -28,6 +31,8 @@ var map = {
 
   loadData: function() {
     Hospital.all().then(function(hospitais) {
+      map._hospitais = hospitais;
+
       _.each(hospitais, function(hosp) {
         if (hosp.id) {
           map.buildMarker(hosp)
@@ -48,7 +53,7 @@ var map = {
   buildMarker: function(hosp) {
     return L.marker(hosp.pos, {
       icon: L.divIcon({
-        className: ('circle-marker hospital-' + hosp.id + ' indicator-' + map.indicatorClass(hosp)),
+        className: [ 'circle-marker', hosp.elementID, map.indicatorClass(hosp) ].join(' '),
         iconSize: 2 * EM,
         html: '<span class="inner-content">42</span>'
       }),
@@ -60,7 +65,7 @@ var map = {
     map.resetMarks();
 
     // set style for active mark
-    var markEl = document.getElementsByClassName('hospital-' + hosp.id)[0];
+    var markEl = document.getElementsByClassName(hosp.elementID)[0];
     if (markEl) {
       markEl.className += ' circle-marker-active';
       Velocity(markEl.children[0], 'fadeIn', {display: 'inline-block'});  // show inner content
@@ -84,11 +89,23 @@ var map = {
   },
 
   indicatorClass: function(hosp) {
+    var color;
     var value = hosp.ratings[homeVM.indicator()];
-    console.log(homeVM.indicator(), ':', value);
-    if (value >= 7) return 'green'
-    else if (value <= 4) return 'red'
-    else return 'yellow'
+
+    if      (value >= 7) { color = 'green'; }
+    else if (value <= 4) { color = 'red'; }
+    else                 { color = 'yellow'; }
+
+    return 'indicator-' + color;
+  },
+
+  onChangeIndicator: function() {
+    _.each(map._hospitais, function(hosp) {
+      var el = document.getElementsByClassName(hosp.elementID)[0];
+
+      // reset color to new indicator
+      el.className = el.className.replace(/indicator-(red|green|yellow)/g, map.indicatorClass(hosp));
+    });
   },
 };
 
