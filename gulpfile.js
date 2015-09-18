@@ -92,6 +92,7 @@ gulp.task('copyVendorCssLibraries', function () {
   return gulp.src([
       'bower_components/normalize-css/normalize.css',
       'bower_components/mapbox.js/mapbox.css',
+      'vendor/auto-complete/auto-complete.css',
     ])
     .pipe(concat('vendor.css'))
     //.pipe(minifyCSS())

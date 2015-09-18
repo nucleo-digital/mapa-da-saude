@@ -2,6 +2,7 @@ var m        = require('mithril');
 var filters  = require('components/filters');
 var map      = require('components/map');
 var ranking  = require('components/ranking');
+var search   = require('components/search');
 var details  = require('components/details');
 var homeVM   = require('models/homeVM');
 
@@ -16,6 +17,7 @@ var home = {
         m.component(map),
         m.component(ranking),
         m.component(filters),
+        m.component(search),
       ]),
       m.component(details),
     ];
