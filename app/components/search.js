@@ -20,7 +20,7 @@ var search = {
 
     new autoComplete({
       selector: 'input#search-input',
-      minChars: 1,
+      minChars: 2,
       source: function(term, suggest){
         term = term.toLowerCase();
         suggest(Hospital.search(term));
