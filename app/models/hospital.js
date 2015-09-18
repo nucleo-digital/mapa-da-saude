@@ -1,10 +1,17 @@
 var m = require('mithril');
 var c = require('config');
 var _ = require('underscore');
+var lunr = require('lunr');
 
 var homeVM = require('models/homeVM');
 
 var _hospitais = []; // cache
+
+var index =  lunr(function () {
+  this.field('name');
+  this.ref('id');
+});
+
 
 var Hospital = {
 
@@ -19,6 +26,9 @@ var Hospital = {
         _.each(hospitais, function(hosp) {
           hosp.pos = [_convertAngleToFloat(hosp.lat), _convertAngleToFloat(hosp.lon)];
           hosp.elementID = 'hospital-' + hosp.id;
+
+          // add to lunr index
+          index.add(hosp);
         });
 
         _hospitais = hospitais;  // cache result
@@ -48,6 +58,13 @@ var Hospital = {
     if      (value >= 7)  return 'green';
     else if (value <= 4)  return 'red';
     else                  return 'yellow';
+  },
+
+  search: function(term) {
+    return _.map(index.search(term), function(res) {
+      var ref = res.ref;
+      return _.find(_hospitais, function(h) { return h.id == ref });
+    });
   },
 
 };

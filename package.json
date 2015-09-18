@@ -49,6 +49,7 @@
     "cookies-js": "^1.2.1",
     "express": "^4.13.3",
     "gulp-stylus": "~2.0.1",
+    "lunr": "^0.5.12",
     "mapbox.js": "^2.2.2",
     "markdown": "^0.5.0",
     "mithril-validator": "^1.1.0",
