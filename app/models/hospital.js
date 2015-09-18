@@ -67,6 +67,10 @@ var Hospital = {
     });
   },
 
+  findById: function(id) {
+    return _.find(_hospitais, function(h) { return h.id == id });
+  },
+
 };
 
 var _convertAngleToFloat = function(point) {
