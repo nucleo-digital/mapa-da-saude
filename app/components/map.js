@@ -40,9 +40,8 @@ var map = {
       }
 
     }).then(function(hospitais) {
-      // TODO change-me
-      // set and arbitrary point to start
-      map.setActiveMark(hospitais[12]);
+      // set any point to start (12 is a point found manually, just to look good =P)
+      map.el.setView(hospitais[12].pos);
     });
   },
 

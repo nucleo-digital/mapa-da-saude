@@ -15,7 +15,41 @@ var details = {
   renderCards: function(hosp) {
     return [
       m('h2.hospital-name', hosp.name),
+
       m('.card.left', [
+        m('h2', 'NÚMERO DE MÉDICOS'),
+        m('.small-divider'),
+        m('.info-image.physicians', [m('img[src=img/physician.png]')]),
+        m('.info-text', [ m('.num', hosp.info.numPhysicians), m('.label', 'médicos') ]),
+      ]),
+      m('.card.middle', [
+        m('h2', 'OUTROS PROFISSIONAIS'),
+        m('.small-divider'),
+        m('.info-image.other', [m('img[src=img/other.png]')]),
+        m('.info-text', [ m('.num', hosp.info.numOtherProfessionals), m('.label', 'outros profissionais') ]),
+
+      ]),
+      m('.card.right', [
+        m('h2', 'LEITOS'),
+        m('.small-divider'),
+        m('.info-image.beds', [m('img[src=img/bed.png]')]),
+        m('.info-text', [ m('.num', hosp.info.numBeds), m('.label', 'leitos') ]),
+      ]),
+      m('.card.left', [
+        m('h2', 'PACIENTES'),
+        m('.small-divider'),
+        m('.info-image.patients', [m('img[src=img/patient.png]')]),
+        m('.info-text', [ m('.num', hosp.info.numPatients), m('.label', 'pacientes') ]),
+
+      ]),
+      m('.card.middle', [
+        m('h2', 'OUVIDORIA'),
+        m('.small-divider'),
+        m('.info-image.ombudsman', [m('img[src=img/ombudsman.png]')]),
+        m('.info-text', [ m('.num', hosp.info.ombudsman), m('.label', 'ouvidoria') ]),
+
+      ]),
+      m('.card.right', [
         m('h2', 'SERVIÇOS ESPECIALIZADOS'),
         m('.small-divider'),
         m('ul.specialized-services', [
@@ -24,7 +58,7 @@ var details = {
           })
         ]),
       ]),
-      m('.card.middle', [
+      m('.card.left', [
         m('h2', 'ATENÇÃO AMBULATORIAL'),
         m('.small-divider'),
         (
@@ -37,7 +71,7 @@ var details = {
           m('.nao-tem', 'NÃO TEM')
         ),
       ]),
-      m('.card.right', [
+      m('.card.middle', [
         m('h2', 'ATENÇÃO HOSPITALAR'),
         m('.small-divider'),
         (
@@ -49,26 +83,6 @@ var details = {
           :
           m('.nao-tem', 'NÃO TEM')
         ),
-      ]),
-      m('.card.left', [
-        m('h2', 'NÚMERO DE MÉDICOS'),
-        m('.small-divider'),
-      ]),
-      m('.card.middle', [
-        m('h2', 'OUTROS PROFISSIONAIS'),
-        m('.small-divider'),
-      ]),
-      m('.card.right', [
-        m('h2', 'LEITOS'),
-        m('.small-divider'),
-      ]),
-      m('.card.left', [
-        m('h2', 'PACIENTES'),
-        m('.small-divider'),
-      ]),
-      m('.card.middle', [
-        m('h2', 'OUVIDORIA'),
-        m('.small-divider'),
       ]),
     ];
   },
