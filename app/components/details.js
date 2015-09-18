@@ -84,6 +84,9 @@ var details = {
           m('.nao-tem', 'NÃO TEM')
         ),
       ]),
+
+      m('h3.note', 'Número de pessoas entrevistadas: 5054'),
+
     ];
   },
 
