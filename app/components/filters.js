@@ -10,7 +10,7 @@ var filters = {
     return m('#filters', [
       m('h2', 'FILTROS'),
       m('.small-divider'),
-      m('p', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.'),
+      m('p', 'Escolha um dos indicadores para comparar as unidades de saúde. Clicando no botão abaixo, você pode ver um ranking, segundo o indicador selecionado. Você também pode selecionar um ponto no mapa, ou item do ranking, para ver detalhes.'),
 
       m('.indicators', [
         m('.indicators-header', [
