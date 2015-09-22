@@ -19,26 +19,26 @@ var details = {
       m('.card.left', [
         m('h2', 'NÚMERO DE MÉDICOS'),
         m('.small-divider'),
-        m('.info-image.physicians', [m('img[src=img/physician.png]')]),
+        m('.info-image.physicians', [m('img[src=img/numero-de-medicos.svg]')]),
         m('.info-text', [ m('.num', hosp.info.numPhysicians), m('.label', 'médicos') ]),
       ]),
       m('.card.middle', [
         m('h2', 'OUTROS PROFISSIONAIS'),
         m('.small-divider'),
-        m('.info-image.other', [m('img[src=img/other.png]')]),
+        m('.info-image.other', [m('img[src=img/outros-profissionais.svg]')]),
         m('.info-text', [ m('.num', hosp.info.numOtherProfessionals), m('.label', 'outros profissionais') ]),
 
       ]),
       m('.card.right', [
         m('h2', 'LEITOS'),
         m('.small-divider'),
-        m('.info-image.beds', [m('img[src=img/bed.png]')]),
+        m('.info-image.beds', [m('img[src=img/leitos.svg]')]),
         m('.info-text', [ m('.num', hosp.info.numBeds), m('.label', 'leitos') ]),
       ]),
       m('.card.left', [
         m('h2', 'PACIENTES'),
         m('.small-divider'),
-        m('.info-image.patients', [m('img[src=img/patient.png]')]),
+        m('.info-image.patients', [m('img[src=img/pacientes.svg]')]),
         m('.info-text', [ m('.num', hosp.info.numPatients), m('.label', 'pacientes') ]),
 
       ]),
