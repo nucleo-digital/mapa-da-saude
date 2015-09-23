@@ -45,7 +45,7 @@ var details = {
       m('.card.middle', [
         m('h2', 'OUVIDORIA'),
         m('.small-divider'),
-        m('.info-image.ombudsman', [m('img[src=img/ombudsman.png]')]),
+        m('.info-image.ombudsman', [m('img[src=img/ouvidoria.svg]')]),
         m('.info-text', [ m('.num', hosp.info.ombudsman), m('.label', 'ouvidoria') ]),
 
       ]),
