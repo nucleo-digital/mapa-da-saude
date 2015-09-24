@@ -10,6 +10,7 @@ var footer = {
         m('.realization', 'Realização:'),
         m('.sponsor', [m('img[src=img/wb.svg]')]),
         m('.sponsor', [m('img[src=img/ceara.png]')]),
+        m('.sponsor', [m('img[src=img/gpoba.png]')]),
         m('a.social[href=/]', [m('img[src=img/google.png]')]),
         m('a.social[href=/]', [m('img[src=img/twitter.png]')]),
         m('a.social[href=/]', [m('img[src=img/facebook.png]')]),
