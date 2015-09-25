@@ -49,7 +49,7 @@ var Hospital = {
   },
 
   indicatorValue: function(hosp) {
-    return hosp.ratings[homeVM.indicator()];
+    return hosp.ratings[homeVM.indicator()].toFixed(4);
   },
 
   indicatorColor: function(hosp) {
