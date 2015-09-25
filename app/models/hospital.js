@@ -55,9 +55,9 @@ var Hospital = {
   indicatorColor: function(hosp) {
     var value = Hospital.indicatorValue(hosp);
 
-    if      (value >= 7)  return 'green';
-    else if (value <= 4)  return 'red';
-    else                  return 'yellow';
+    if      (value >= 2.70)  return 'green';
+    else if (value <  2.00)  return 'red';
+    else                     return 'yellow';
   },
 
   search: function(term) {

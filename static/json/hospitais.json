@@ -19,10 +19,10 @@
         "ombudsman": "631"
     },
     "ratings": {
-        "services": 5,
-        "equipments": 2,
-        "physicians": 6,
-        "waitingTime": 8
+        "services": 2.6076,
+        "equipments": 2.8481,
+        "physicians": 2.6962,
+        "waitingTime": 1.8608
     }
   },
 
@@ -45,10 +45,10 @@
         "ombudsman": "947"
     },
     "ratings": {
-        "services": 2,
-        "equipments": 8,
-        "physicians": 3,
-        "waitingTime": 4
+        "services": 2.9848,
+        "equipments": 3.1212,
+        "physicians": 2.9621,
+        "waitingTime": 2.3030
     }
   },
 
@@ -71,10 +71,10 @@
         "ombudsman": "1090"
     },
     "ratings": {
-        "services": 8,
-        "equipments": 3,
-        "physicians": 4,
-        "waitingTime": 5
+        "services": 3.3158,
+        "equipments": 3.1052,
+        "physicians": 3.2632,
+        "waitingTime": 2.2368
     }
   },
 
@@ -97,10 +97,10 @@
         "ombudsman": "1354"
     },
     "ratings": {
-        "services": 9,
-        "equipments": 9,
-        "physicians": 3,
-        "waitingTime": 2
+        "services": 2.8800,
+        "equipments": 2.6300,
+        "physicians": 3.1700,
+        "waitingTime": 2.1400
     }
   },
 
@@ -123,10 +123,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 5,
-        "equipments": 5,
-        "physicians": 6,
-        "waitingTime": 8
+        "services": 2.3617,
+        "equipments": 2.5574,
+        "physicians": 2.6894,
+        "waitingTime": 1.8213
     }
   },
 
@@ -149,10 +149,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 2,
-        "equipments": 4,
-        "physicians": 7,
-        "waitingTime": 6
+        "services": 2.6445,
+        "equipments": 2.6172,
+        "physicians": 2.8437,
+        "waitingTime": 1.9101
     }
   },
 
@@ -175,10 +175,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 1,
-        "equipments": 2,
-        "physicians": 8,
-        "waitingTime": 5
+        "services": 2.6101,
+        "equipments": 2.6101,
+        "physicians": 2.7288,
+        "waitingTime": 1.8079
     }
 
   },
@@ -202,10 +202,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 3,
-        "equipments": 4,
-        "physicians": 5,
-        "waitingTime": 9
+        "services": 2.6064,
+        "equipments": 2.6862,
+        "physicians": 2.7819,
+        "waitingTime": 2.0053
     }
   },
 
@@ -228,10 +228,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 2,
-        "equipments": 1,
-        "physicians": 7,
-        "waitingTime": 6
+        "services": 2.6083,
+        "equipments": 2.5666,
+        "physicians": 2.8499,
+        "waitingTime": 1.8416
     }
   },
 
@@ -254,10 +254,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 3,
-        "equipments": 4,
-        "physicians": 6,
-        "waitingTime": 9
+        "services": 2.5680,
+        "equipments": 2.5760,
+        "physicians": 2.7599,
+        "waitingTime":2.0560
     }
   },
 
@@ -280,10 +280,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 4,
-        "equipments": 4,
-        "physicians": 3,
-        "waitingTime": 7
+        "services": 2.5148,
+        "equipments": 2.5841,
+        "physicians": 2.8910,
+        "waitingTime": 2.0841
     }
   },
 
@@ -306,10 +306,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 6,
-        "equipments": 5,
-        "physicians": 8,
-        "waitingTime": 6
+        "services": 2.4390,
+        "equipments": 2.5853,
+        "physicians": 2.9146,
+        "waitingTime": 1.9024
     }
   },
 
@@ -332,10 +332,10 @@
         "ombudsman": "-"
     },
     "ratings": {
-        "services": 5,
-        "equipments": 7,
-        "physicians": 7,
-        "waitingTime": 8
+        "services": 2.6455,
+        "equipments": 2.7354,
+        "physicians": 2.9259,
+        "waitingTime": 1.8148
     }
   }
 ]
