@@ -1,6 +1,7 @@
 var m = require('mithril');
 var _ = require('underscore');
 var homeVM = require('models/homeVM');
+var maternity = require('components/maternity');
 
 var details = {
   controller: function() {
@@ -58,6 +59,7 @@ var details = {
           })
         ]),
       ]),
+      details.maternidades(hosp),
       m('.card.left', [
         m('h2', 'ATENÇÃO AMBULATORIAL'),
         m('.small-divider'),
@@ -110,7 +112,32 @@ var details = {
       default:
         return 'Baixa'
     }
-  }
+  },
+
+  maternidades: function(hosp) {
+    if (!hosp.maternity) {
+      return []
+
+    } else {
+      return [
+        m('.card.left', [
+          m('h2', 'Maternidade: Fez pre-natal?'),
+          m('.small-divider'),
+          m.component(maternity, {hosp: hosp, type: 'pre_natal'}),
+        ]),
+        m('.card.middle', [
+          m('h2', 'Maternidade: Teve acompanhante?'),
+          m('.small-divider'),
+          m.component(maternity, {hosp: hosp, type: 'acompanhante'}),
+        ]),
+        m('.card.right', [
+          m('h2', 'Maternidade: Por que nao teve acompanhante?'),
+          m('.small-divider'),
+          m.component(maternity, {hosp: hosp, type: 'sem_acompanhante'}),
+        ])
+      ]
+    }
+  },
 };
 
 module.exports = details;

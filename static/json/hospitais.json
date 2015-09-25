@@ -101,6 +101,30 @@
         "equipments": 2.6300,
         "physicians": 3.1700,
         "waitingTime": 2.1400
+    },
+    "maternity": {
+        "pre_natal": {
+            "nao": 1.3,
+            "particular": 8.9,
+            "sus": 89.9
+        },
+        "acompanhante": {
+            "nao": 77.2,
+            "mae": 6.3,
+            "pai_do_bebe": 5.1,
+            "outros": 5.1,
+            "irmao": 3.8,
+            "companheiro": 1.3,
+            "amigo": 1.3
+        },
+        "sem_acompanhante": {
+            "nao_permitiu": 52.5,
+            "nao_sabia": 21.3,
+            "nao_deu_tempo": 8.2,
+            "nao_quis": 8.2,
+            "outros": 6.6,
+            "nao_tinha": 3.3
+        }
     }
   },
 

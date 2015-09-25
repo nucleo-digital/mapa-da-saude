@@ -46,6 +46,7 @@
   },
   "engine": "node 0.12",
   "dependencies": {
+    "chart.js": "^1.0.2",
     "cookies-js": "^1.2.1",
     "express": "^4.13.3",
     "gulp-stylus": "~2.0.1",
